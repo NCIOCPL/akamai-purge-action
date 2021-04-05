@@ -8,13 +8,13 @@ inputs:
     description: 'Your Akamai HTTP API'
     required: true
   client-secret:
-    description: 'Your API's Client Secret'
+    description: 'Your APIs Client Secret'
     required: true
   access-token:
-    description: 'Your API's Access Token'
+    description: 'Your APIs Access Token'
     required: true
   client-token:
-    description: 'Your API's Client Token'
+    description: 'Your APIs Client Token'
     required: true
   type:
     description: 'Purge types currently supported: (cpcodes).'
