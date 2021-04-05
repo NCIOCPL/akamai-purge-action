@@ -1,0 +1,28 @@
+name: 'Akamai Purge'
+description: 'Purges an Akamai Cache Tag or CP Code'
+branding:
+	icon: 'trash'
+	color: 'gray-dark'
+inputs:
+	hostname:
+		description: 'Your Akamai HTTP API'
+		required: true
+	client-secret:
+		description: 'Your API's Client Secret'
+		required: true
+	access-token:
+		description: 'Your API's Access Token'
+		required: true
+	client-token:
+		description: 'Your API's Client Token'
+		required: true
+  type:
+    description: 'Purge types currently supported: (cpcodes).'
+    required: true
+    default: 'cpcodes'
+  ref:
+    description: 'The thing to clear. (Currently either a single cpcode or an array of cpcodes)'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
