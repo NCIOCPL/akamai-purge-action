@@ -13,11 +13,11 @@ jobs:
       tag: "v${{ steps.vars.outputs.pkg_version }}"
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Setup node
-        uses: actions/setup-node@v2-beta
+        uses: actions/setup-node@v3
         with:
-          node-version: "12"
+          node-version-file: ".nvmrc"
       - name: npm install
         uses: bahmutov/npm-install@v1
       - name: Build package
